@@ -1,4 +1,3 @@
-/* Estilos CSS simples y funcionales */
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +24,6 @@ body {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border-radius: 10px;
-  /* Agregando posición relativa para el user-info */
   position: relative;
 }
 
@@ -39,7 +37,7 @@ body {
   opacity: 0.9;
 }
 
-/* Estilos para información de usuario en header */
+
 .user-info {
   position: absolute;
   top: 15px;
@@ -105,25 +103,6 @@ body {
   background-color: #5568d3;
 }
 
-/* Agregado estilos para botón agregar imagen */
-.btn-agregar {
-  padding: 12px 30px;
-  background-color: #2ecc71;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.3s;
-}
-
-.btn-agregar:hover {
-  background-color: #27ae60;
-}
-
 .filtros {
   display: flex;
   gap: 10px;
@@ -151,7 +130,7 @@ body {
   color: white;
 }
 
-/* Estilos para botones de favoritos */
+
 .btn-favoritos {
   background-color: #f39c12;
   border-color: #f39c12;
@@ -167,7 +146,6 @@ body {
   background-color: #e67e22;
 }
 
-/* Botón de favorito sobre cada imagen */
 .imagen-card {
   position: relative;
 }
@@ -202,7 +180,7 @@ body {
   color: white;
 }
 
-/* Botón de favorito en el modal */
+
 .btn-favorito-modal {
   background-color: #f39c12;
   color: white;
@@ -285,7 +263,7 @@ body {
   color: #666;
 }
 
-/* Modal */
+
 .modal {
   display: none;
   position: fixed;
@@ -367,75 +345,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* Estilos agregados para test.php */
-/* Estilos específicos para la página de prueba test.php */
-.test-container {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
 
-.test-title {
-  color: #333;
-  border-bottom: 3px solid #667eea;
-  padding-bottom: 10px;
-}
-
-.test-success {
-  color: #2ecc71;
-  margin: 20px 0;
-}
-
-.test-section {
-  color: #3498db;
-  margin-top: 30px;
-}
-
-.test-table {
-  width: 100%;
-  background-color: white;
-  margin: 20px 0;
-  border-collapse: collapse;
-  border: 1px solid #ddd;
-}
-
-.test-table th {
-  background-color: #3498db;
-  color: white;
-  padding: 12px;
-  text-align: left;
-}
-
-.test-table td {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-.test-table tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-.test-count {
-  font-weight: bold;
-  color: #667eea;
-  margin: 15px 0;
-}
-
-.test-error {
-  color: #e74c3c;
-}
-
-hr {
-  border: none;
-  border-top: 2px solid #eee;
-  margin: 20px 0;
-}
-/* Fin de estilos para test.php */
-
-/* Estilos para páginas de autenticación (login y registro) */
 .auth-container {
   min-height: 100vh;
   display: flex;
@@ -544,14 +454,12 @@ hr {
   text-decoration: underline;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .galeria {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 15px;
   }
 
-  /* Ajustes responsive para user-info */
   .user-info {
     position: static;
     justify-content: center;
@@ -567,7 +475,6 @@ hr {
     font-size: 1em;
   }
 
-  /* Ajustes responsive para auth-box */
   .auth-box {
     padding: 30px 20px;
   }
@@ -580,187 +487,4 @@ hr {
     width: 95%;
     margin: 20px auto;
   }
-
-  /*  Ajustes responsive para admin */
-  .admin-header {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .admin-user-info {
-    flex-direction: column;
-  }
-
-  .formulario-container {
-    padding: 20px;
-  }
-}
-
-/*  Estilos para panel de administración */
-.admin-container {
-  min-height: 100vh;
-  background-color: #f5f5f5;
-}
-
-.admin-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.admin-header h1 {
-  font-size: 2em;
-  margin: 0;
-}
-
-.admin-user-info {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  font-size: 14px;
-}
-
-.admin-user-info span {
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 8px 15px;
-  border-radius: 20px;
-  font-weight: bold;
-}
-
-.btn-volver {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
-  padding: 8px 20px;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s;
-  border: 2px solid white;
-}
-
-.btn-volver:hover {
-  background-color: white;
-  color: #667eea;
-  transform: scale(1.05);
-}
-
-.admin-content {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-.formulario-container {
-  background-color: white;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-
-.formulario-container h2 {
-  color: #667eea;
-  margin-bottom: 25px;
-  font-size: 1.8em;
-  text-align: center;
-}
-
-.formulario-container form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.formulario-container .form-group label {
-  display: block;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 8px;
-  font-size: 14px;
-}
-
-.formulario-container .form-group input,
-.formulario-container .form-group textarea,
-.formulario-container .form-group select {
-  width: 100%;
-  padding: 12px;
-  border: 2px solid #ddd;
-  border-radius: 5px;
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-  transition: border-color 0.3s;
-}
-
-.formulario-container .form-group input:focus,
-.formulario-container .form-group textarea:focus,
-.formulario-container .form-group select:focus {
-  outline: none;
-  border-color: #667eea;
-}
-
-.formulario-container .form-group small {
-  display: block;
-  margin-top: 5px;
-  color: #666;
-  font-size: 12px;
-}
-
-.btn-submit {
-  padding: 14px;
-  background-color: #667eea;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.btn-submit:hover {
-  background-color: #5568d3;
-  transform: translateY(-2px);
-}
-
-.instrucciones {
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.instrucciones h3 {
-  color: #667eea;
-  margin-bottom: 15px;
-  font-size: 1.5em;
-}
-
-.instrucciones ul {
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-.instrucciones li {
-  margin-bottom: 10px;
-  color: #666;
-  line-height: 1.6;
-}
-
-.instrucciones p {
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.instrucciones a {
-  color: #667eea;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.instrucciones a:hover {
-  text-decoration: underline;
 }
